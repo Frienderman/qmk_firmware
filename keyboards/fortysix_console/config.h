@@ -16,7 +16,7 @@
 #define MATRIX_COLS 5
 
 /* key matrix pins */
-#define MATRIX_ROW_PINS { B6, B2, B3, B1, PF7, PF6, PF5, PF4 }
+#define MATRIX_ROW_PINS { B1, B5, B2, B6, F7, F6, F5, F4 }
 #define MATRIX_COL_PINS { B5, B4, E6, D7, C6 }
 #define UNUSED_PINS
 
@@ -43,7 +43,7 @@
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
 )
 
-#define TAPPING_TERM 200
+//#define TAPPING_TERM 200
 
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS

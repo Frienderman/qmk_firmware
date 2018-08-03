@@ -2,7 +2,7 @@
 #include "action_layer.h"
 #include "quantum.h"
 #include "action.h"
-#include "process_keycode/process_tap_dance.h"
+//#include "process_keycode/process_tap_dance.h"
 
 //Keymaps are at the end.
 
@@ -43,9 +43,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * Cluster can, of course, be physically rotated so check your keyboard.
  */
 
-	[_QWERTY] = LAYOUT_fortysix_half(
+	[_QWERTY] = LAYOUT_fortysix_console(
 		KC_ESC, KC_PSCR, KC_PAUS, KC_DEL, KC_APP,
-		KC_, KC_P7, KC_P8, KC_P9, KC_PSLS,
+		RESET, KC_P7, KC_P8, KC_P9, KC_PSLS,
 		KC_RCTRL, KC_P4, KC_P5, KC_P6, KC_PAST,
 		KC_RALT, KC_P1, KC_P2, KC_P3, KC_PMNS,
 		KC_TAB, KC_GRAVE, KC_P0, KC_PDOT, KC_PPLS,
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * Cluster can, of course, be physically rotated so check your keyboard.
  */
 
-	[_FUNCTION] = LAYOUT_fortysix_half(
+	[_FUNCTION] = LAYOUT_fortysix_console(
     KC_ESC, KC_F10, KC_F11, KC_F12, KC_APP,
 		KC_TRNS, KC_F7, KC_F8, KC_F9, KC_NO,
 		KC_RCTRL, KC_F4, KC_F5, KC_F6, KC_NO,
@@ -107,7 +107,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * Cluster can, of course, be physically rotated so check your keyboard.
  */
 
-	[_LAYRGB] = LAYOUT_fortysix_half(
+	[_LAYRGB] = LAYOUT_fortysix_console(
     KC_NO, RGB_RMOD, RGB_TOG, RGB_MOD, KC_NO,
 		KC_NO, RGB_HUD, KC_NO, RGB_HUI, KC_NO,
 		KC_NO, RGB_SAD, RGB_M_P, RGB_SAI, KC_NO,
@@ -116,8 +116,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_Q, KC_W, KC_E, KC_R, KC_T,
 		KC_A, KC_S, KC_D, KC_F, KC_G,
 		KC_Z, KC_X, RESET, KC_V, KC_B),
-
-
 };
 
 

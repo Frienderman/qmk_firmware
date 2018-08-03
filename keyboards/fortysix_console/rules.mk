@@ -45,7 +45,7 @@ BOOTLOADER = caterina
 # Boot Section Size in *bytes*
 OPT_DEFS += -DBOOTLOADER_SIZE=4096
 
-TAP_DANCE_ENABLE = yes
+#TAP_DANCE_ENABLE = yes
 #SRC += fortysix.c
 
 # Build Options
