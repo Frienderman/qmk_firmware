@@ -16,7 +16,7 @@
 #define MATRIX_COLS 5
 
 /* key matrix pins */
-#define MATRIX_ROW_PINS { B1, B5, B2, B6, F7, F6, F5, F4 }
+#define MATRIX_ROW_PINS { B1, B3, B2, B6, F7, F6, F5, F4 }
 #define MATRIX_COL_PINS { B5, B4, E6, D7, C6 }
 #define UNUSED_PINS
 
@@ -26,7 +26,7 @@
 /* number of backlight levels */
 
 #ifdef BACKLIGHT_PIN
-#define BACKLIGHT_LEVELS 5
+#define BACKLIGHT_LEVELS 3
 #endif
 
 /* Set 0 if debouncing isn't needed */
@@ -43,17 +43,14 @@
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
 )
 
-//#define TAPPING_TERM 200
-
 /* prevent stuck modifiers */
 #define PREVENT_STUCK_MODIFIERS
-
 
 #define RGB_DI_PIN D3
 #ifdef RGB_DI_PIN
 #define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 8
-#define RGBLIGHT_HUE_STEP 12
+#define RGBLED_NUM 2
+#define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
 #define RGBLIGHT_LIMIT_VAL 128
